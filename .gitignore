@@ -1,1 +1,3 @@
 node_modules/*
+proj/fonts/*
+proj/.sass-cache/*

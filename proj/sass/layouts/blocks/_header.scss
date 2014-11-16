@@ -2,6 +2,166 @@
 	width: 100%;
 }
 
-.header {
+
+
+// Общий стиль для шапки
+
+.header__info, .header__buy, .header__nav {
 	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+// Цвет 1-го, 2-го и 3-го блока шапки
+
+.header__info__wrapper {
+	background: #45626e;
+}
+
+.header__buy__wrapper {
+	background: #eef3f7;
+}
+
+.header__nav__wrapper {
+	background: #fff;
+}
+
+// 1-ый блок в шапке
+
+// Социальные иконки
+
+.social {
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+
+.social__list {
+	padding: 0;
+	margin: 0;
+}
+
+.social__list-item {
+	display: inline-block;
+	.social__list-link {
+		background: url(../img/sprites.png) no-repeat;
+		width: 23px;
+		height: 22px;
+		display: block;
+	}
+	.social__list-link_vk {
+		background-position: -120px 0;
+	}
+	.social__list-link_fb {
+		background-position: -150px 0;
+	}
+	.social__list-link_tw {
+		background-position: -120px -25px ;
+	}
+}
+
+// Адрес
+
+.header__info__address {
+	.header__info__address-item {
+		padding: 13px 0;
+		text-align: center;
+		color: #FFF;
+		font-size: 13px;
+		font-weight: 400;
+		font-style: normal;
+		position: relative;
+		&:after {
+			position: absolute;
+			background: url(../img/sprites.png) no-repeat -150px -25px;
+			content: '';
+			width: 16px;
+			height: 22px;
+			top: 8px;
+			left: 362px;
+		}
+	}
+}
+
+// Номер телефона
+
+.header__info__phone {
+	position: absolute;
+	top: 8px;
+	right: 0;
+	.header__info__phone-item {		
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		font-size: 25px;
+	}
+	.header__info__phone-item_another {
+		font-family: 'elektra_light_probold';
+		color: #00b9fe;
+		font-size: 0.5em;
+		top: -0.75em;
+	}
+}
+
+// 2-ый блок в шапке
+
+.header__buy {
+	padding: 24px 0 17px 0;
+	overflow: hidden;
+}
+
+// Логотип
+
+.header__buy__logo {
+	margin-right: 60px ;
+	float: left;
+}
+
+// Поиск
+
+.header__buy__search {
+	float: left;
+	margin: 14px 24px 12px 0;
+	.header__buy__search-item {
+		box-sizing: border-box;
+		padding: 7.5px 0 8px 10px;
+		border: 1px solid #dce6f0;
+		width: 338px;
+		font-family: elektra_light_proregular;
+		color: #b7b9bb;
+		font-size: 15px;
+		&::-webkit-input-placeholder {
+		  font-family: elektra_light_proregular;
+		  color: #DCE6F0;
+		  font-size: 15px;
+		}
+	}
+	.header__buy__search-item_search {
+		margin-left: -83px;
+		padding: 6.5px 14.5px 8.5px 14.5px;
+		background-color: #00B9FE;
+		color: #FFF;
+		font-family: 'elektra_light_probold';
+		font-size: 17px;
+		border: none;
+
+	}
+
+}
+
+.header__buy__about {
+	margin-top: 4px;
+}
+
+.header__buy__about__list {
+	float: right;
+	.header__buy__about__list-item {
+		display: inline-block;
+	}
+	.header__buy__about__list-link {
+		color: #23bdfe;
+		&:active {
+			color: #613993;
+		}
+	}
 }

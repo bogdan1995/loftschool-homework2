@@ -548,12 +548,209 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'elektra_light_probold';
+  src: url("../fonts/elektra_light_pro_bold-webfont.eot");
+  src: url("../fonts/elektra_light_pro_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_light_pro_bold-webfont.woff2") format("woff2"), url("../fonts/elektra_light_pro_bold-webfont.woff") format("woff"), url("../fonts/elektra_light_pro_bold-webfont.ttf") format("truetype"), url("../fonts/elektra_light_pro_bold-webfont.svg#elektra_light_probold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'elektra_medium_proitalic';
+  src: url("../fonts/elektra_medium_pro_italic-webfont.eot");
+  src: url("../fonts/elektra_medium_pro_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_medium_pro_italic-webfont.woff2") format("woff2"), url("../fonts/elektra_medium_pro_italic-webfont.woff") format("woff"), url("../fonts/elektra_medium_pro_italic-webfont.ttf") format("truetype"), url("../fonts/elektra_medium_pro_italic-webfont.svg#elektra_medium_proitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'elektra_light_proregular';
+  src: url("../fonts/elektra_light_pro-webfont.eot");
+  src: url("../fonts/elektra_light_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_light_pro-webfont.woff2") format("woff2"), url("../fonts/elektra_light_pro-webfont.woff") format("woff"), url("../fonts/elektra_light_pro-webfont.ttf") format("truetype"), url("../fonts/elektra_light_pro-webfont.svg#elektra_light_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'elektra_medium_proregular';
+  src: url("../fonts/elektra_medium_pro-webfont.eot");
+  src: url("../fonts/elektra_medium_pro-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/elektra_medium_pro-webfont.woff2") format("woff2"), url("../fonts/elektra_medium_pro-webfont.woff") format("woff"), url("../fonts/elektra_medium_pro-webfont.ttf") format("truetype"), url("../fonts/elektra_medium_pro-webfont.svg#elektra_medium_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/layouts/_settings.scss */
+body {
+  font-size: 100%/1em;
+  font-family: elektra_light_proregular;
+  width: 100%;
+}
+
 /* line 1, ../sass/layouts/blocks/_header.scss */
 .header_wrapper {
   width: 100%;
 }
 
-/* line 5, ../sass/layouts/blocks/_header.scss */
-.header {
+/* line 9, ../sass/layouts/blocks/_header.scss */
+.header__info, .header__buy, .header__nav {
   width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 17, ../sass/layouts/blocks/_header.scss */
+.header__info__wrapper {
+  background: #45626e;
+}
+
+/* line 21, ../sass/layouts/blocks/_header.scss */
+.header__buy__wrapper {
+  background: #eef3f7;
+}
+
+/* line 25, ../sass/layouts/blocks/_header.scss */
+.header__nav__wrapper {
+  background: #fff;
+}
+
+/* line 33, ../sass/layouts/blocks/_header.scss */
+.social {
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+/* line 39, ../sass/layouts/blocks/_header.scss */
+.social__list {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 44, ../sass/layouts/blocks/_header.scss */
+.social__list-item {
+  display: inline-block;
+}
+/* line 46, ../sass/layouts/blocks/_header.scss */
+.social__list-item .social__list-link {
+  background: url(../img/sprites.png) no-repeat;
+  width: 23px;
+  height: 22px;
+  display: block;
+}
+/* line 52, ../sass/layouts/blocks/_header.scss */
+.social__list-item .social__list-link_vk {
+  background-position: -120px 0;
+}
+/* line 55, ../sass/layouts/blocks/_header.scss */
+.social__list-item .social__list-link_fb {
+  background-position: -150px 0;
+}
+/* line 58, ../sass/layouts/blocks/_header.scss */
+.social__list-item .social__list-link_tw {
+  background-position: -120px -25px;
+}
+
+/* line 66, ../sass/layouts/blocks/_header.scss */
+.header__info__address .header__info__address-item {
+  padding: 13px 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+/* line 74, ../sass/layouts/blocks/_header.scss */
+.header__info__address .header__info__address-item:after {
+  position: absolute;
+  background: url(../img/sprites.png) no-repeat -150px -25px;
+  content: '';
+  width: 16px;
+  height: 22px;
+  top: 8px;
+  left: 362px;
+}
+
+/* line 88, ../sass/layouts/blocks/_header.scss */
+.header__info__phone {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+/* line 92, ../sass/layouts/blocks/_header.scss */
+.header__info__phone .header__info__phone-item {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 25px;
+}
+/* line 98, ../sass/layouts/blocks/_header.scss */
+.header__info__phone .header__info__phone-item_another {
+  font-family: 'elektra_light_probold';
+  color: #00b9fe;
+  font-size: 0.5em;
+  top: -0.75em;
+}
+
+/* line 108, ../sass/layouts/blocks/_header.scss */
+.header__buy {
+  padding: 24px 0 17px 0;
+  overflow: hidden;
+}
+
+/* line 115, ../sass/layouts/blocks/_header.scss */
+.header__buy__logo {
+  margin-right: 60px;
+  float: left;
+}
+
+/* line 122, ../sass/layouts/blocks/_header.scss */
+.header__buy__search {
+  float: left;
+  margin: 14px 24px 12px 0;
+}
+/* line 125, ../sass/layouts/blocks/_header.scss */
+.header__buy__search .header__buy__search-item {
+  box-sizing: border-box;
+  padding: 7.5px 0 8px 10px;
+  border: 1px solid #dce6f0;
+  width: 338px;
+  font-family: elektra_light_proregular;
+  color: #b7b9bb;
+  font-size: 15px;
+}
+/* line 133, ../sass/layouts/blocks/_header.scss */
+.header__buy__search .header__buy__search-item::-webkit-input-placeholder {
+  font-family: elektra_light_proregular;
+  color: #DCE6F0;
+  font-size: 15px;
+}
+/* line 139, ../sass/layouts/blocks/_header.scss */
+.header__buy__search .header__buy__search-item_search {
+  margin-left: -83px;
+  padding: 6.5px 14.5px 8.5px 14.5px;
+  background-color: #00B9FE;
+  color: #FFF;
+  font-family: 'elektra_light_probold';
+  font-size: 17px;
+  border: none;
+}
+
+/* line 152, ../sass/layouts/blocks/_header.scss */
+.header__buy__about {
+  margin-top: 4px;
+}
+
+/* line 156, ../sass/layouts/blocks/_header.scss */
+.header__buy__about__list {
+  float: right;
+}
+/* line 158, ../sass/layouts/blocks/_header.scss */
+.header__buy__about__list .header__buy__about__list-item {
+  display: inline-block;
+}
+/* line 161, ../sass/layouts/blocks/_header.scss */
+.header__buy__about__list .header__buy__about__list-link {
+  color: #23bdfe;
+}
+/* line 163, ../sass/layouts/blocks/_header.scss */
+.header__buy__about__list .header__buy__about__list-link:active {
+  color: #613993;
 }
