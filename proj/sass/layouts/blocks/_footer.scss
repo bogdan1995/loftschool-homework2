@@ -1,38 +1,71 @@
+// Общий стиль подвала
+
 .footer__wrapper {
   background:  url('../img/footer_background.png') #613993;
 }
+
+// Стиль столбца
 
 .footer__row {
   padding-top: 49px;
   overflow: hidden;
 }
 
+// Стиль колонки
+
 .footer__row__col4{
   float:left;
 }
+
+// Стиль  обертки колонки
+
+.footer__row__col4__wrapper {
+  margin-top: 12px;
+  margin-right: 47px;
+  overflow: hidden;
+}
+
+// Стиль колонки лого
 
 .footer__row__col4__logo {
   margin: 50px 120px 90px 0;
 }
 
-.footer__row__col4__wrapper {
-  margin-top: 12px;
-}
+// Стиль списков
 
 .footer__row__col4__list {
   float: left;
   margin-right: 72px;
 }
 
+// Стиль ссылок в списке
+
 .footer__row__col4__list-link {
   font-size: 15px;
   color: #fff;
-  line-height: 1.5;
+  line-height: 1.6;
 }
+
+// Стиль для первой ссылке в списке
 
 .footer__row__col4__list-item:first-child {
   .footer__row__col4__list-link {
     font-family: elektra_light_probold;
     text-decoration: none;
   }
+}
+
+// Стиль для блока с социалками
+
+.footer__row-col4__wrapper_another {
+  margin-top: 23px;
+  position: relative;
+}
+
+.app {
+  margin-bottom: 23px;
+}
+
+.app-link {
+  display: inline;
 }

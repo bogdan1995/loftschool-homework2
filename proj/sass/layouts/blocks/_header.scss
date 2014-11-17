@@ -20,38 +20,6 @@
 
 // 1-ый блок в шапке
 
-// Социальные иконки
-
-.social {
-	position: absolute;
-	top: 8px;
-	left: 0;
-}
-
-.social__list-item {
-  display: inline-block;
-  margin-left: 4px;
-    &:first-child {
-      margin-left: 0;
-  }
-}
-.social__list-link {
-	background: url(../img/sprites.png) no-repeat;
-	width: 23px;
-	height: 22px;
-	display: block;
-}
-.social__list-link_vk {
-	background-position: -120px 0;
-}
-.social__list-link_fb {
-	background-position: -150px 0;
-}
-.social__list-link_tw {
-	background-position: -120px -25px ;
-}
-
-
 // Адрес
 
 .header__info__address {
