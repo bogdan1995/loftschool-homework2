@@ -126,7 +126,7 @@
 
 .header__buy__search {
   float: left;
-  margin: 10px 9px 12px 0;
+  margin: 14px 24px 12px 0;
 }
 .header__buy__search-item {
 	box-sizing: border-box;
@@ -181,20 +181,9 @@
 .header__buy__about__list-link_backet {
   box-sizing: border-box;
   width: 139px;
-  padding: 16px 0 15px 50px;
+  padding: 16px 20px 15px 50px;
   background-color: #FFF;
   border: 1px solid #DCE6F0;
   display: block;
   margin-left: 3px;
-  color: #5C7B98;
-  position:  relative;
-  &:after {
-    position: absolute;
-    background: url(../img/sprites.png) no-repeat -175px 0;
-    width: 20px;
-    height: 17px;
-    content: '';
-    top: 12px;
-    left: 11px;
-  }
 }
