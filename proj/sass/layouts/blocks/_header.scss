@@ -1,16 +1,8 @@
-.header_wrapper {
+.header__wrapper {
 	width: 100%;
+    margin-bottom: 24px;
 }
 
-
-
-// Общий стиль для шапки
-
-.header__info, .header__buy, .header__nav {
-	width: 1000px;
-	margin: 0 auto;
-	position: relative;
-}
 
 // Цвет 1-го, 2-го и 3-го блока шапки
 
@@ -106,7 +98,7 @@
 // 2-ый блок в шапке
 
 .header__buy {
-	padding: 24px 0 17px 0;
+	padding: 24px 0 12px 0;
 	overflow: hidden;
 }
 
@@ -197,19 +189,62 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-.header__nav__list {
-  margin: 0 22px;
-}
-
 .header__nav__list-item {
   display: inline-block;
-  padding: 14px 9px 10px;
+  position: relative;
+  margin-left: -5px;
+  &:last-child .header__nav__list-link {
+    padding-right: 14px;
+    &:before, &:after {
+      border: none;
+    }
+  }
 }
 
 .header__nav__list-link {
   color: #5C7B98;
   font-size: 15px;
   text-decoration: none;
+  display: block;
+  padding: 13px 9px 9px 31px;
+  &:before {
+    content: '';
+    position: absolute;
+    border-left: 16px solid #dce6f0;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    top: 0;
+    right: -16px;
+    z-index: 99;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    border-left: 16px solid #F7F7F7;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    top: 0;
+    right: -15px;
+    z-index: 99;
+  }
+  &:hover  {
+    background: #dce6f0;
+    &:after {
+      border-left-color:  #dce6f0;
+    }
+  }
 }
 
-
+.header__nav__list-link_active {
+  background: #00b9fe;
+  color: #fff;
+  &:after, &:before{
+    border-left: 16px solid #00b9fe;
+  }
+  &:hover {
+    background: #00b9fe;
+    &:after, &:before {
+      border-left-color: #00b9fe;
+    }
+  }
+}

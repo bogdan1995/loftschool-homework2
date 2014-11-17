@@ -1,0 +1,38 @@
+.footer__wrapper {
+  background:  url('../img/footer_background.png') #613993;
+}
+
+.footer__row {
+  padding-top: 49px;
+  overflow: hidden;
+}
+
+.footer__row__col4{
+  float:left;
+}
+
+.footer__row__col4__logo {
+  margin: 50px 120px 90px 0;
+}
+
+.footer__row__col4__wrapper {
+  margin-top: 12px;
+}
+
+.footer__row__col4__list {
+  float: left;
+  margin-right: 72px;
+}
+
+.footer__row__col4__list-link {
+  font-size: 15px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.footer__row__col4__list-item:first-child {
+  .footer__row__col4__list-link {
+    font-family: elektra_light_probold;
+    text-decoration: none;
+  }
+}

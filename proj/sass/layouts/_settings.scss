@@ -12,3 +12,11 @@ ul {
 li {
   list-style: none;
 }
+
+// Общий стиль для странички
+
+.header__info, .header__buy, .header__nav, .content, .footer {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
