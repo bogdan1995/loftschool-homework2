@@ -175,6 +175,7 @@
   text-decoration: none;
   display: block;
   padding: 13px 9px 9px 31px;
+  transition: all .3s ease-in-out;
   &:before {
     content: '';
     position: absolute;
@@ -194,6 +195,7 @@
     top: 0;
     right: -15px;
     z-index: 99;
+    transition: all .3s ease-in-out;
   }
   &:hover  {
     background: #dce6f0;
@@ -211,8 +213,10 @@
   }
   &:hover {
     background: #00b9fe;
+    transform: none;
     &:after, &:before {
       border-left-color: #00b9fe;
+      transform: none;
     }
   }
 }

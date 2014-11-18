@@ -20,7 +20,7 @@
 // Стиль  обертки колонки
 
 .footer__row__col4__wrapper {
-  margin-top: 12px;
+  margin-top: 9px;
   margin-right: 47px;
   overflow: hidden;
 }
@@ -44,6 +44,9 @@
   font-size: 15px;
   color: #fff;
   line-height: 1.6;
+  &:hover {
+    color: #FFAE00;
+  }
 }
 
 // Стиль для первой ссылке в списке
