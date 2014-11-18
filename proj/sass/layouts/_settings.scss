@@ -13,6 +13,17 @@ li {
   list-style: none;
 }
 
+// Clearfix
+
+.clearfix:after {
+  content:".";
+  clear:both;
+  display:block;
+  height:0;
+  font-size:0;
+  visibility:hidden
+}
+
 // Общий стиль для странички
 
 .header__info, .header__buy, .header__nav, .content, .footer {

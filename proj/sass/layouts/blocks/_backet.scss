@@ -1,0 +1,31 @@
+.backet {
+  display: none;
+  position: absolute;
+  width: 246px;
+  background-color: #FFF;
+  border: 1px solid #DCE6F0;
+  box-sizing: border-box;
+  top: 48px;
+  right: 0;
+  z-index: 999;
+}
+
+.active {
+  display: block;
+}
+
+.backet__list-row:nth-child(2n-1) {
+  background: #eef2f4;
+}
+
+.backet__list-col {
+  height: 76.67px;
+}
+
+.backet__list-col:nth-child(2n-1) {
+  text-align: center;
+}
+
+.backet__list-col:nth-child(2n) {
+  padding-left: 12px;
+}

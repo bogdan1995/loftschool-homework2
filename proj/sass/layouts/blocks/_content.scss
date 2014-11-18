@@ -57,10 +57,16 @@
   opacity: 1;
 }
 
+// Обертка контента
+
+.content__wrapper {
+  margin-bottom: 75px;
+}
+
 // Блок пути
 
 .content__path {
-  margin-bottom: 23px;
+  margin-bottom: 15px;
 }
 // Элемент списка
 
@@ -90,6 +96,83 @@
 }
 
 // Галерея изображений
+
+.content__media__photos {
+  float: left;
+  margin-right: 29px;
+  margin-top: 8px;
+  position: relative;
+}
+
+.content__media__photos-pic {
+  margin-bottom: 12px;
+}
+
+.slider {
+  width: 239px;
+  overflow: hidden;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.slider__list {
+  width: 480px;
+}
+
+.slider__list-items {
+  display: inline-block;
+}
+
+.slider__list-pic {
+  cursor: pointer;
+}
+
+.slider__controls-button {
+  box-sizing: border-box;
+  width: 14px;
+  height: 34px;
+  background: #d0e4f3;
+  position: absolute;
+  bottom: 25px;
+  font-family: elektra_light_probold;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+  padding-top: 2px;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    top: 0;
+  }
+  &:hover {
+    background: #00b9fe;
+  }
+}
+
+.slider__controls-button_prev {
+  left: 8px;
+  &:hover:after {
+    border-right: 8px solid #00b9fe;
+  }
+  &:after {
+    border-right: 8px solid #d0e4f3;
+    left: -8px;
+  }
+}
+
+.slider__controls-button_next {
+  right: 8px;
+  &:hover:after {
+    border-left: 8px solid #00b9fe;
+  }
+  &:after {
+    border-left: 8px solid #d0e4f3;
+    right: -8px;
+  }
+}
 
 // Таблица с характеристиками
 
@@ -121,7 +204,7 @@
   box-sizing: border-box;
   color: #5C7B98;
   font-size: 14px;
-  padding: 8px 25px 6px 10px;
+  padding: 6px 25px 5px 10px;
   &:nth-child(2n-1) {
     width: 188px;
   }
@@ -133,10 +216,6 @@
 }
 
 // Блок с описанем чего-либо
-
-.content__about {
-  margin-bottom: 65px;
-}
 
 // Стили сетки
 

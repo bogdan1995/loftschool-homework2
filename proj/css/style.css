@@ -595,6 +595,16 @@ li {
 }
 
 /* line 18, ../sass/layouts/_settings.scss */
+.clearfix:after, .header__buy:after, .header__buy__about:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  font-size: 0;
+  visibility: hidden;
+}
+
+/* line 29, ../sass/layouts/_settings.scss */
 .header__info, .header__buy, .header__nav, .content, .footer {
   width: 1000px;
   margin: 0 auto;
@@ -630,7 +640,7 @@ li {
 
 /* line 25, ../sass/layouts/blocks/_social.scss */
 .social__list-item_big {
-  margin-right: 11px;
+  margin-right: 6px;
 }
 
 /* line 29, ../sass/layouts/blocks/_social.scss */
@@ -675,6 +685,44 @@ li {
 /* line 59, ../sass/layouts/blocks/_social.scss */
 .social__list-link_tw {
   background-position: -120px -25px;
+}
+
+/* line 1, ../sass/layouts/blocks/_backet.scss */
+.backet {
+  display: none;
+  position: absolute;
+  width: 246px;
+  background-color: #FFF;
+  border: 1px solid #DCE6F0;
+  box-sizing: border-box;
+  top: 48px;
+  right: 0;
+  z-index: 999;
+}
+
+/* line 13, ../sass/layouts/blocks/_backet.scss */
+.active {
+  display: block;
+}
+
+/* line 17, ../sass/layouts/blocks/_backet.scss */
+.backet__list-row:nth-child(2n-1) {
+  background: #eef2f4;
+}
+
+/* line 21, ../sass/layouts/blocks/_backet.scss */
+.backet__list-col {
+  height: 76.67px;
+}
+
+/* line 25, ../sass/layouts/blocks/_backet.scss */
+.backet__list-col:nth-child(2n-1) {
+  text-align: center;
+}
+
+/* line 29, ../sass/layouts/blocks/_backet.scss */
+.backet__list-col:nth-child(2n) {
+  padding-left: 12px;
 }
 
 /* line 1, ../sass/layouts/blocks/_header.scss */
@@ -743,7 +791,6 @@ li {
 /* line 68, ../sass/layouts/blocks/_header.scss */
 .header__buy {
   padding: 24px 0 12px 0;
-  overflow: hidden;
 }
 
 /* line 75, ../sass/layouts/blocks/_header.scss */
@@ -789,7 +836,6 @@ li {
 /* line 112, ../sass/layouts/blocks/_header.scss */
 .header__buy__about {
   margin-top: 4px;
-  overflow: hidden;
   float: right;
 }
 
@@ -797,20 +843,21 @@ li {
 .header__buy__about__list-item {
   display: inline-block;
   margin-left: 15px;
+  position: relative;
 }
 
-/* line 123, ../sass/layouts/blocks/_header.scss */
+/* line 124, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link {
   color: #23bdfe;
   font-size: 13px;
   transition: all .3s linear;
 }
-/* line 127, ../sass/layouts/blocks/_header.scss */
+/* line 128, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link:hover {
   color: #613993;
 }
 
-/* line 132, ../sass/layouts/blocks/_header.scss */
+/* line 133, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link_backet {
   box-sizing: border-box;
   width: 139px;
@@ -822,7 +869,7 @@ li {
   color: #5C7B98;
   position: relative;
 }
-/* line 142, ../sass/layouts/blocks/_header.scss */
+/* line 143, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link_backet:after {
   position: absolute;
   background: url(../img/sprites.png) no-repeat -175px 0;
@@ -833,28 +880,28 @@ li {
   left: 11px;
 }
 
-/* line 155, ../sass/layouts/blocks/_header.scss */
+/* line 156, ../sass/layouts/blocks/_header.scss */
 .header__nav__wrapper {
   background-color: #F7F7F7;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-/* line 160, ../sass/layouts/blocks/_header.scss */
+/* line 161, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item {
   display: inline-block;
   position: relative;
   margin-left: -5px;
 }
-/* line 164, ../sass/layouts/blocks/_header.scss */
+/* line 165, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link {
   padding-right: 14px;
 }
-/* line 166, ../sass/layouts/blocks/_header.scss */
+/* line 167, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link:before, .header__nav__list-item:last-child .header__nav__list-link:after {
   border: none;
 }
 
-/* line 172, ../sass/layouts/blocks/_header.scss */
+/* line 173, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link {
   color: #5C7B98;
   font-size: 15px;
@@ -863,7 +910,7 @@ li {
   padding: 13px 9px 9px 31px;
   transition: all .3s ease-in-out;
 }
-/* line 179, ../sass/layouts/blocks/_header.scss */
+/* line 180, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:before {
   content: '';
   position: absolute;
@@ -874,7 +921,7 @@ li {
   right: -16px;
   z-index: 99;
 }
-/* line 189, ../sass/layouts/blocks/_header.scss */
+/* line 190, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:after {
   content: '';
   position: absolute;
@@ -886,30 +933,30 @@ li {
   z-index: 99;
   transition: all .3s ease-in-out;
 }
-/* line 200, ../sass/layouts/blocks/_header.scss */
+/* line 201, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover {
   background: #dce6f0;
 }
-/* line 202, ../sass/layouts/blocks/_header.scss */
+/* line 203, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover:after {
   border-left-color: #dce6f0;
 }
 
-/* line 208, ../sass/layouts/blocks/_header.scss */
+/* line 209, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active {
   background: #00b9fe;
   color: #fff;
 }
-/* line 211, ../sass/layouts/blocks/_header.scss */
+/* line 212, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:after, .header__nav__list-link_active:before {
   border-left: 16px solid #00b9fe;
 }
-/* line 214, ../sass/layouts/blocks/_header.scss */
+/* line 215, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover {
   background: #00b9fe;
   transform: none;
 }
-/* line 217, ../sass/layouts/blocks/_header.scss */
+/* line 218, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover:after, .header__nav__list-link_active:hover:before {
   border-left-color: #00b9fe;
   transform: none;
@@ -1047,40 +1094,137 @@ li {
 }
 
 /* line 62, ../sass/layouts/blocks/_content.scss */
-.content__path {
-  margin-bottom: 23px;
+.content__wrapper {
+  margin-bottom: 75px;
 }
 
-/* line 67, ../sass/layouts/blocks/_content.scss */
+/* line 68, ../sass/layouts/blocks/_content.scss */
+.content__path {
+  margin-bottom: 15px;
+}
+
+/* line 73, ../sass/layouts/blocks/_content.scss */
 .content__path__list-item {
   display: inline-block;
   color: #5C7B98;
   font-size: 10px;
 }
 
-/* line 75, ../sass/layouts/blocks/_content.scss */
+/* line 81, ../sass/layouts/blocks/_content.scss */
 .content__path__list-link {
   font-size: 14px;
 }
 
-/* line 81, ../sass/layouts/blocks/_content.scss */
+/* line 87, ../sass/layouts/blocks/_content.scss */
 .content__path__list-link_current {
   text-decoration: none;
   color: #5C7B98;
 }
 
-/* line 88, ../sass/layouts/blocks/_content.scss */
+/* line 94, ../sass/layouts/blocks/_content.scss */
 .content__media {
   margin-bottom: 60px;
 }
 
-/* line 96, ../sass/layouts/blocks/_content.scss */
+/* line 100, ../sass/layouts/blocks/_content.scss */
+.content__media__photos {
+  float: left;
+  margin-right: 29px;
+  margin-top: 8px;
+  position: relative;
+}
+
+/* line 107, ../sass/layouts/blocks/_content.scss */
+.content__media__photos-pic {
+  margin-bottom: 12px;
+}
+
+/* line 111, ../sass/layouts/blocks/_content.scss */
+.slider {
+  width: 239px;
+  overflow: hidden;
+  height: 80px;
+  margin: 0 auto;
+}
+
+/* line 118, ../sass/layouts/blocks/_content.scss */
+.slider__list {
+  width: 480px;
+}
+
+/* line 122, ../sass/layouts/blocks/_content.scss */
+.slider__list-items {
+  display: inline-block;
+}
+
+/* line 126, ../sass/layouts/blocks/_content.scss */
+.slider__list-pic {
+  cursor: pointer;
+}
+
+/* line 130, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button {
+  box-sizing: border-box;
+  width: 14px;
+  height: 34px;
+  background: #d0e4f3;
+  position: absolute;
+  bottom: 25px;
+  font-family: elektra_light_probold;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+  padding-top: 2px;
+  cursor: pointer;
+}
+/* line 143, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button:after {
+  content: '';
+  position: absolute;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  top: 0;
+}
+/* line 150, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button:hover {
+  background: #00b9fe;
+}
+
+/* line 155, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button_prev {
+  left: 8px;
+}
+/* line 157, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button_prev:hover:after {
+  border-right: 8px solid #00b9fe;
+}
+/* line 160, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button_prev:after {
+  border-right: 8px solid #d0e4f3;
+  left: -8px;
+}
+
+/* line 166, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button_next {
+  right: 8px;
+}
+/* line 168, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button_next:hover:after {
+  border-left: 8px solid #00b9fe;
+}
+/* line 171, ../sass/layouts/blocks/_content.scss */
+.slider__controls-button_next:after {
+  border-left: 8px solid #d0e4f3;
+  right: -8px;
+}
+
+/* line 179, ../sass/layouts/blocks/_content.scss */
 .content__media__character__information-table {
   width: 443px;
   box-sizing: border-box;
 }
 
-/* line 103, ../sass/layouts/blocks/_content.scss */
+/* line 186, ../sass/layouts/blocks/_content.scss */
 .content__media__character__information-name {
   text-align: left;
   color: #00B9FE;
@@ -1090,46 +1234,41 @@ li {
   margin-bottom: 22px;
 }
 
-/* line 114, ../sass/layouts/blocks/_content.scss */
+/* line 197, ../sass/layouts/blocks/_content.scss */
 .content__media__character__information-items:nth-child(2n) {
   background: #eef2f4;
 }
 
-/* line 120, ../sass/layouts/blocks/_content.scss */
+/* line 203, ../sass/layouts/blocks/_content.scss */
 .content__media__character__information-innerItems {
   box-sizing: border-box;
   color: #5C7B98;
   font-size: 14px;
-  padding: 8px 25px 6px 10px;
+  padding: 6px 25px 5px 10px;
 }
-/* line 125, ../sass/layouts/blocks/_content.scss */
+/* line 208, ../sass/layouts/blocks/_content.scss */
 .content__media__character__information-innerItems:nth-child(2n-1) {
   width: 188px;
 }
-/* line 128, ../sass/layouts/blocks/_content.scss */
+/* line 211, ../sass/layouts/blocks/_content.scss */
 .content__media__character__information-innerItems:nth-child(2n) {
   padding-left: 63px;
   width: 255px;
   text-align: justify;
 }
 
-/* line 137, ../sass/layouts/blocks/_content.scss */
-.content__about {
-  margin-bottom: 65px;
-}
-
-/* line 145, ../sass/layouts/blocks/_content.scss */
+/* line 224, ../sass/layouts/blocks/_content.scss */
 .row {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 152, ../sass/layouts/blocks/_content.scss */
+/* line 231, ../sass/layouts/blocks/_content.scss */
 .row__col12 {
   width: 100%;
 }
 
-/* line 156, ../sass/layouts/blocks/_content.scss */
+/* line 235, ../sass/layouts/blocks/_content.scss */
 .row__col4 {
   box-sizing: border-box;
   padding-right: 12px;
@@ -1137,7 +1276,7 @@ li {
   width: 33%;
 }
 
-/* line 165, ../sass/layouts/blocks/_content.scss */
+/* line 244, ../sass/layouts/blocks/_content.scss */
 .row__col12-name {
   margin: 0;
   font-size: 25px;
@@ -1145,7 +1284,7 @@ li {
   font-family: 'elektra_light_probold';
 }
 
-/* line 174, ../sass/layouts/blocks/_content.scss */
+/* line 253, ../sass/layouts/blocks/_content.scss */
 .row__col4-text {
   margin: 8px 0;
 }

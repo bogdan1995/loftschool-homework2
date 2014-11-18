@@ -66,8 +66,8 @@
 // 2-ый блок в шапке
 
 .header__buy {
+  @extend .clearfix;
 	padding: 24px 0 12px 0;
-	overflow: hidden;
 }
 
 // Логотип
@@ -111,13 +111,14 @@
 
 .header__buy__about {
 	margin-top: 4px;
-    overflow: hidden;
+    @extend .clearfix;
     float: right;
 }
 
 .header__buy__about__list-item {
     display: inline-block;
     margin-left: 15px;
+  position: relative;
 }
 
 .header__buy__about__list-link {
