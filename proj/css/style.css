@@ -595,7 +595,7 @@ li {
 }
 
 /* line 20, ../sass/layouts/_settings.scss */
-.clearfix:after, .header__buy:after, .header__buy__about:after {
+.clearfix:after, .header__info:after, .header__buy:after, .header__buy__about:after {
   content: ".";
   clear: both;
   display: block;
@@ -611,39 +611,34 @@ li {
   position: relative;
 }
 
-/* line 3, ../sass/layouts/blocks/_social.scss */
-.social {
-  position: absolute;
-  z-index: 99;
-}
-
-/* line 8, ../sass/layouts/blocks/_social.scss */
+/* line 4, ../sass/layouts/blocks/_social.scss */
 .social_small {
-  top: 8px;
-  left: 0;
+  margin-top: 9px;
+  float: left;
+  margin-right: 317px;
 }
 
-/* line 13, ../sass/layouts/blocks/_social.scss */
+/* line 10, ../sass/layouts/blocks/_social.scss */
 .social_big {
   position: relative;
 }
 
-/* line 17, ../sass/layouts/blocks/_social.scss */
+/* line 14, ../sass/layouts/blocks/_social.scss */
 .social__list-item {
   display: inline-block;
   margin-left: 4px;
 }
-/* line 20, ../sass/layouts/blocks/_social.scss */
+/* line 17, ../sass/layouts/blocks/_social.scss */
 .social__list-item:first-child {
   margin-left: 0;
 }
 
-/* line 25, ../sass/layouts/blocks/_social.scss */
+/* line 22, ../sass/layouts/blocks/_social.scss */
 .social__list-item_big {
-  margin-right: 6px;
+  margin-right: 9px;
 }
 
-/* line 29, ../sass/layouts/blocks/_social.scss */
+/* line 26, ../sass/layouts/blocks/_social.scss */
 .social__list-link {
   background: url(../img/sprites.png) no-repeat;
   width: 23px;
@@ -651,38 +646,38 @@ li {
   display: block;
 }
 
-/* line 36, ../sass/layouts/blocks/_social.scss */
+/* line 33, ../sass/layouts/blocks/_social.scss */
 .social__list-link_big {
   width: 37px;
   height: 36px;
 }
 
-/* line 41, ../sass/layouts/blocks/_social.scss */
+/* line 38, ../sass/layouts/blocks/_social.scss */
 .social__list-link_big_vk {
   background-position: 0 0;
 }
 
-/* line 45, ../sass/layouts/blocks/_social.scss */
+/* line 42, ../sass/layouts/blocks/_social.scss */
 .social__list-link_big_fb {
   background-position: -40px 0;
 }
 
-/* line 49, ../sass/layouts/blocks/_social.scss */
+/* line 46, ../sass/layouts/blocks/_social.scss */
 .social__list-link_big_tw {
   background-position: -80px 0;
 }
 
-/* line 53, ../sass/layouts/blocks/_social.scss */
+/* line 50, ../sass/layouts/blocks/_social.scss */
 .social__list-link_vk {
   background-position: -120px 0;
 }
 
-/* line 56, ../sass/layouts/blocks/_social.scss */
+/* line 53, ../sass/layouts/blocks/_social.scss */
 .social__list-link_fb {
   background-position: -150px 0;
 }
 
-/* line 59, ../sass/layouts/blocks/_social.scss */
+/* line 56, ../sass/layouts/blocks/_social.scss */
 .social__list-link_tw {
   background-position: -120px -25px;
 }
@@ -736,50 +731,55 @@ li {
   background: #45626e;
 }
 
-/* line 13, ../sass/layouts/blocks/_header.scss */
+/* line 16, ../sass/layouts/blocks/_header.scss */
 .header__buy__wrapper {
   background: #eef3f7;
 }
 
-/* line 17, ../sass/layouts/blocks/_header.scss */
+/* line 20, ../sass/layouts/blocks/_header.scss */
 .header__nav__wrapper {
   background: #fff;
 }
 
-/* line 26, ../sass/layouts/blocks/_header.scss */
-.header__info__address .header__info__address-item {
-  padding: 13px 0;
-  text-align: center;
+/* line 28, ../sass/layouts/blocks/_header.scss */
+.header__info__address {
+  float: left;
+  position: relative;
+}
+/* line 31, ../sass/layouts/blocks/_header.scss */
+.header__info__address .header__info__address-map {
+  line-height: 41px;
+  padding-bottom: 4px;
   color: #FFF;
   font-size: 13px;
   font-weight: 400;
   font-style: normal;
   position: relative;
 }
-/* line 34, ../sass/layouts/blocks/_header.scss */
-.header__info__address .header__info__address-item:after {
+/* line 39, ../sass/layouts/blocks/_header.scss */
+.header__info__address .header__info__address-map:after {
   position: absolute;
   background: url(../img/sprites.png) no-repeat -150px -25px;
   content: '';
   width: 16px;
   height: 22px;
-  top: 8px;
-  left: 362px;
+  top: -6px;
+  left: -25px;
 }
 
-/* line 46, ../sass/layouts/blocks/_header.scss */
+/* line 51, ../sass/layouts/blocks/_header.scss */
 .header__info__address-map {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 53, ../sass/layouts/blocks/_header.scss */
+/* line 58, ../sass/layouts/blocks/_header.scss */
 .header__info__phone {
   position: absolute;
   top: 8px;
   right: 0;
 }
-/* line 57, ../sass/layouts/blocks/_header.scss */
+/* line 62, ../sass/layouts/blocks/_header.scss */
 .header__info__phone .header__info__phone-item {
   padding: 0;
   margin: 0;
@@ -787,32 +787,33 @@ li {
   font-size: 25px;
   text-decoration: none;
 }
-/* line 64, ../sass/layouts/blocks/_header.scss */
+/* line 69, ../sass/layouts/blocks/_header.scss */
 .header__info__phone .header__info__phone-item_another {
   font-family: 'elektra_light_probold';
   color: #00b9fe;
-  font-size: 0.5em;
-  top: -0.75em;
+  font-size: 0.50em;
+  top: -0.69em;
+  left: -1px;
 }
 
-/* line 74, ../sass/layouts/blocks/_header.scss */
+/* line 80, ../sass/layouts/blocks/_header.scss */
 .header__buy {
   padding: 24px 0 12px 0;
 }
 
-/* line 81, ../sass/layouts/blocks/_header.scss */
+/* line 87, ../sass/layouts/blocks/_header.scss */
 .header__buy__logo {
   margin-right: 60px;
   float: left;
 }
 
-/* line 88, ../sass/layouts/blocks/_header.scss */
+/* line 94, ../sass/layouts/blocks/_header.scss */
 .header__buy__search {
   float: left;
   margin: 10px 9px 12px 0;
 }
 
-/* line 92, ../sass/layouts/blocks/_header.scss */
+/* line 98, ../sass/layouts/blocks/_header.scss */
 .header__buy__search-item {
   padding: 7.5px 0 8px 10px;
   border: 1px solid #dce6f0;
@@ -821,14 +822,14 @@ li {
   color: #b7b9bb;
   font-size: 15px;
 }
-/* line 99, ../sass/layouts/blocks/_header.scss */
+/* line 105, ../sass/layouts/blocks/_header.scss */
 .header__buy__search-item::-webkit-input-placeholder {
   font-family: elektra_light_proregular;
   color: #DCE6F0;
   font-size: 15px;
 }
 
-/* line 105, ../sass/layouts/blocks/_header.scss */
+/* line 111, ../sass/layouts/blocks/_header.scss */
 .header__buy__search-item_search {
   margin-left: -83px;
   padding: 6.5px 14.5px 8.5px 14.5px;
@@ -839,31 +840,31 @@ li {
   border: none;
 }
 
-/* line 117, ../sass/layouts/blocks/_header.scss */
+/* line 123, ../sass/layouts/blocks/_header.scss */
 .header__buy__about {
   margin-top: 4px;
   float: right;
 }
 
-/* line 123, ../sass/layouts/blocks/_header.scss */
+/* line 129, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-item {
   display: inline-block;
   margin-left: 15px;
   position: relative;
 }
 
-/* line 129, ../sass/layouts/blocks/_header.scss */
+/* line 135, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link {
   color: #23bdfe;
   font-size: 13px;
   transition: all .3s linear;
 }
-/* line 133, ../sass/layouts/blocks/_header.scss */
+/* line 139, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link:hover {
   color: #613993;
 }
 
-/* line 138, ../sass/layouts/blocks/_header.scss */
+/* line 144, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link_backet {
   box-sizing: border-box;
   width: 139px;
@@ -875,7 +876,7 @@ li {
   color: #5C7B98;
   position: relative;
 }
-/* line 148, ../sass/layouts/blocks/_header.scss */
+/* line 154, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link_backet:after {
   position: absolute;
   background: url(../img/sprites.png) no-repeat -175px 0;
@@ -886,28 +887,28 @@ li {
   left: 11px;
 }
 
-/* line 161, ../sass/layouts/blocks/_header.scss */
+/* line 167, ../sass/layouts/blocks/_header.scss */
 .header__nav__wrapper {
   background-color: #F7F7F7;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-/* line 166, ../sass/layouts/blocks/_header.scss */
+/* line 172, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item {
   display: inline-block;
   position: relative;
   margin-left: -5px;
 }
-/* line 170, ../sass/layouts/blocks/_header.scss */
+/* line 176, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link {
   padding-right: 14px;
 }
-/* line 172, ../sass/layouts/blocks/_header.scss */
+/* line 178, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link:before, .header__nav__list-item:last-child .header__nav__list-link:after {
   border: none;
 }
 
-/* line 178, ../sass/layouts/blocks/_header.scss */
+/* line 184, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link {
   color: #5C7B98;
   font-size: 15px;
@@ -916,7 +917,7 @@ li {
   padding: 13px 9px 9px 31px;
   transition: all .3s ease-in-out;
 }
-/* line 185, ../sass/layouts/blocks/_header.scss */
+/* line 191, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:before {
   content: '';
   position: absolute;
@@ -927,7 +928,7 @@ li {
   right: -16px;
   z-index: 99;
 }
-/* line 195, ../sass/layouts/blocks/_header.scss */
+/* line 201, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:after {
   content: '';
   position: absolute;
@@ -939,30 +940,30 @@ li {
   z-index: 99;
   transition: all .3s ease-in-out;
 }
-/* line 206, ../sass/layouts/blocks/_header.scss */
+/* line 212, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover {
   background: #dce6f0;
 }
-/* line 208, ../sass/layouts/blocks/_header.scss */
+/* line 214, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover:after {
   border-left-color: #dce6f0;
 }
 
-/* line 214, ../sass/layouts/blocks/_header.scss */
+/* line 220, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active {
   background: #00b9fe;
   color: #fff;
 }
-/* line 217, ../sass/layouts/blocks/_header.scss */
+/* line 223, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:after, .header__nav__list-link_active:before {
   border-left: 16px solid #00b9fe;
 }
-/* line 220, ../sass/layouts/blocks/_header.scss */
+/* line 226, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover {
   background: #00b9fe;
   transform: none;
 }
-/* line 223, ../sass/layouts/blocks/_header.scss */
+/* line 229, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover:after, .header__nav__list-link_active:hover:before {
   border-left-color: #00b9fe;
   transform: none;
@@ -1264,7 +1265,7 @@ li {
   box-sizing: border-box;
   color: #5C7B98;
   font-size: 14px;
-  padding: 6px 25px 5px 10px;
+  padding: 9px 25px 8px 10px;
 }
 /* line 221, ../sass/layouts/blocks/_content.scss */
 .content__media__character__information-innerItems:nth-child(2n-1) {

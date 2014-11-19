@@ -9,6 +9,9 @@
 .header__info__wrapper {
 	background: #45626e;
 }
+.header__info {
+  @extend .clearfix;
+}
 
 .header__buy__wrapper {
 	background: #eef3f7;
@@ -23,9 +26,11 @@
 // Адрес
 
 .header__info__address {
-	.header__info__address-item {
-		padding: 13px 0;
-		text-align: center;
+  float: left;
+  position: relative;
+	.header__info__address-map {
+		line-height: 41px;
+        padding-bottom: 4px;
 		color: #FFF;
 		font-size: 13px;
 		font-weight: 400;
@@ -37,8 +42,8 @@
 			content: '';
 			width: 16px;
 			height: 22px;
-			top: 8px;
-			left: 362px;
+			top: -6px;
+			left: -25px;
 		}
 	}
 }
@@ -64,8 +69,9 @@
 	.header__info__phone-item_another {
 		font-family: 'elektra_light_probold';
 		color: #00b9fe;
-		font-size: 0.5em;
-		top: -0.75em;
+		font-size: 0.50em;
+		top: -0.69em;
+        left: -1px;
 	}
 }
 

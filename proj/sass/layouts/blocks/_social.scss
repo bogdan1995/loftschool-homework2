@@ -1,13 +1,10 @@
 // Социальные иконки
 
-.social {
-  position: absolute;
-  z-index:  99;
-}
 
 .social_small {
-  top: 8px;
-  left: 0;
+  margin-top: 9px;
+  float:left;
+  margin-right: 317px;
 }
 
 .social_big {
@@ -23,7 +20,7 @@
 }
 
 .social__list-item_big {
-  margin-right: 6px;
+  margin-right: 9px;
 }
 
 .social__list-link {
