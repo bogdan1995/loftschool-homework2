@@ -43,6 +43,11 @@
 	}
 }
 
+.header__info__address-map {
+  text-decoration: none;
+  color: #fff;
+}
+
 // Номер телефона
 
 .header__info__phone {
@@ -54,6 +59,7 @@
 		margin: 0;
 		color: #fff;
 		font-size: 25px;
+        text-decoration: none;
 	}
 	.header__info__phone-item_another {
 		font-family: 'elektra_light_probold';

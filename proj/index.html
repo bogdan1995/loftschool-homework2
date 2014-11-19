@@ -13,14 +13,15 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css"/>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body id="scroll">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="buttonUp">
-            <a class="buttonUp-link" href="#">Наверх</a>
+            <a class="buttonUp-link" href="#scroll">Наверх</a>
             <div class="triangle"></div>
         </div>
         <div class="wrapper">
@@ -41,10 +42,12 @@
                             </ul>
                         </div>
                         <div class="header__info__address">
-                            <address class="header__info__address-item">г. Москва, ул. Новая 246, офис 214</address>
+                            <address class="header__info__address-item"><a class="header__info__address-map" target="_blank" href="http://maps.yandex.ru/?text=%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0&sll=37.511517%2C55.874713&ll=37.511517%2C55.874713&spn=0.033903%2C0.010290&z=16&l=map">г. Москва, ул. Новая 246, офис 214</a></address>
                         </div>
                         <div class="header__info__phone">
-                            <p class="header__info__phone-item"><sup class="header__info__phone-item_another">+7 (921)</sup> 322 12 32</p>
+                            <a class="header__info__phone-item" href="tel:+79213321232">
+                                <sup class="header__info__phone-item_another">+7 (921)</sup> 322 12 32
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -92,25 +95,39 @@
                     <div class="header__nav">
                         <ul class="header__nav__list">
                             <li class="header__nav__list-item">
-                                <a href="#" class="header__nav__list-link">Мобильные телефоны</a>
+                                <a href="#" class="header__nav__list-link">
+                                    <span class="animated">Мобильные телефоны</span>
+                                </a>
                             </li>
                             <li class="header__nav__list-item">
-                                <a href="#" class="header__nav__list-link header__nav__list-link_active">Планшеты</a>
+                                <a href="#" class="header__nav__list-link header__nav__list-link_active">
+                                    <span class="animated">Планшеты</span>
+                                </a>
                             </li>
                             <li class="header__nav__list-item">
-                                <a href="#" class="header__nav__list-link">Мр3 плееры</a>
+                                <a href="#" class="header__nav__list-link">
+                                    <span class="animated">Мр3 плееры</span>
+                                </a>
                             </li>
                             <li class="header__nav__list-item">
-                                <a href="#" class="header__nav__list-link">Персональные компьютеры</a>
+                                <a href="#" class="header__nav__list-link">
+                                    <span class="animated">Персональные компьютеры</span>
+                                </a>
                             </li>
                             <li class="header__nav__list-item">
-                                <a href="#" class="header__nav__list-link">Ноутбуки</a>
+                                <a href="#" class="header__nav__list-link">
+                                    <span class="animated">Ноутбуки</span>
+                                </a>
                             </li>
                             <li class="header__nav__list-item">
-                                <a href="#" class="header__nav__list-link">Apple TV</a>
+                                <a href="#" class="header__nav__list-link">
+                                    <span class="animated">Apple TV</span>
+                                </a>
                             </li>
                             <li class="header__nav__list-item">
-                                <a href="#" class="header__nav__list-link">Аксессуары</a>
+                                <a href="#" class="header__nav__list-link">
+                                    <span class="animated">Аксессуары</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -133,28 +150,28 @@
                     </div>
                     <div class="content__media">
                         <div class="content__media__photos">
-                            <div class="content__media__photos-pic">
-                                <img src="img/slider/big.png" alt="big"/>
+                            <div class="content__media__photos_wrapper">
+                                <img src="img/slider/1.jpg" alt="big" class="content__media__photos-pic"/>
                             </div>
                             <div class="slider">
                                 <ul class="slider__list">
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/small.png" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/1.jpg" alt=""/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/small.png" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/2.jpg" alt=""/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/small.png" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/3.jpg" alt=""/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/small.png" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/4.jpg" alt=""/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/small.png" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/5.jpg" alt=""/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/small.png" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/6.jpg" alt=""/>
                                     </li>
                                 </ul>
                                 <div class="slider__controls-button slider__controls-button_prev">&lt;</div>
