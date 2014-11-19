@@ -11,9 +11,11 @@
         <meta name="description" content="ЭпплShop">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/animate.css"/>
+        <!--[if lte IE 9]>
+        <link type="text/css" rel="stylesheet" href="css/ie.css" />
+        <![endif]-->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body id="scroll">
@@ -334,6 +336,12 @@
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/placeholder.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('input, textarea').placeholder();
+            });
+        </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
