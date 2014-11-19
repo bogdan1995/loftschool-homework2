@@ -1,0 +1,47 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 9, ../sass/ie.scss */
+.content__media__character__information-items:first-child + *,
+.content__media__character__information-items:first-child + * + * + *,
+.content__media__character__information-items:first-child + * + * + * + * + *,
+.content__media__character__information-items:first-child + * + * + * + * + * + * + *,
+.content__media__character__information-items:first-child + * + * + * + * + * + * + * + * + * {
+  background: #eef2f4;
+}
+
+/* line 16, ../sass/ie.scss */
+.backet__list-row:first-child + * {
+  background: #eef2f4;
+}
+
+/* line 20, ../sass/ie.scss */
+.header__nav__list-item {
+  border-right: 1px solid #dce6f0;
+}
+
+/* line 24, ../sass/ie.scss */
+.header__nav__list-item:first-child + * + * + * + * + * + * {
+  border-right: 1px solid transparent;
+}
+
+/* line 28, ../sass/ie.scss */
+.header__nav__list-link {
+  padding: 10px 20px 11px 19px;
+}
+/* line 29, ../sass/ie.scss */
+.header__nav__list-link:after, .header__nav__list-link:before {
+  display: none;
+}
+
+/* line 35, ../sass/ie.scss */
+.header__buy__search-item {
+  width: 320px;
+}
+
+/* line 39, ../sass/ie.scss */
+.header__nav__wrapper {
+  border-bottom: 1px solid  #dce6f0;
+}
