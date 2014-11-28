@@ -26,8 +26,9 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css"/>
         <!--[if lte IE 9]>
-        <link type="text/css" rel="stylesheet" href="css/ie.min.css" />
+        <link rel="stylesheet" href="css/ie.css"/>
         <![endif]-->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -35,10 +36,7 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="buttonUp">
-            <a class="buttonUp-link" href="#scroll">Наверх</a>
-            <div class="triangle"></div>
-        </div>
+
         <div class="wrapper">
             <div class="header__wrapper">
                 <div class="header__info__wrapper">
@@ -69,11 +67,15 @@
                 <div class="header__buy__wrapper">
                     <div class="header__buy">
                         <div class="header__buy__logo">
-                            <img src="img/logo/header_logo.png" alt="">
+                            <a href="#" class="logo">
+                                <img src="img/logo/header_logo.png" alt="ЭпплShop" >
+                            </a>
                         </div>
                         <div class="header__buy__search">
-                            <input type="text" placeholder="iMac 27 дюймов" class="header__buy__search-item">
-                            <input type="submit" value="Поиск" class="header__buy__search-item_search">
+                            <form action="">
+                                <input type="text" placeholder="iMac 27 дюймов" class="header__buy__search-item">
+                                <input type="submit" value="Поиск" class="header__buy__search-item_search">
+                            </form>
                         </div>
                         <div class="header__buy__about">
                             <ul class="header__buy__about__list">
@@ -88,15 +90,15 @@
                                     <div class="backet">
                                         <table class="backet__list">
                                             <tr class="backet__list-row">
-                                                <td class="backet__list-col"><img  class="backet__list-link_pic" src="img/items/iphone.png" alt=""/></td>
+                                                <td class="backet__list-col"><img  class="backet__list-link_pic" src="img/items/iphone.png" alt="iPhone 6"/></td>
                                                 <td class="backet__list-col"><a class="header__buy__about__list-link" href="">iPhone 6 </a></td>
                                             </tr>
                                             <tr class="backet__list-row">
-                                                <td class="backet__list-col"><img class="backet__list-link_pic" src="img/items/ipad.png" alt=""/></td>
+                                                <td class="backet__list-col"><img class="backet__list-link_pic" src="img/items/ipad.png" alt="iPad Air Wi-Fi"/></td>
                                                 <td class="backet__list-col"><a class="header__buy__about__list-link" href="">iPad Air Wi-Fi + Cellular 128GB - Silver </a></td>
                                             </tr>
                                             <tr class="backet__list-row">
-                                                <td class="backet__list-col"><img  class="backet__list-link_pic" src="img/items/macbook.png" alt=""/></td>
+                                                <td class="backet__list-col"><img  class="backet__list-link_pic" src="img/items/macbook.png" alt="Macbook"/></td>
                                                 <td class="backet__list-col"><a class="header__buy__about__list-link" href=""> Macbook Air</a></td>
                                             </tr>
                                         </table>
@@ -171,70 +173,70 @@
                             <div class="slider">
                                 <ul class="slider__list">
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/1.jpg" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/1.jpg" alt="ЭпплShop"/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/2.jpg" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/2.jpg" alt="ЭпплShop"/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/3.jpg" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/3.jpg" alt="ЭпплShop"/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/4.jpg" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/4.jpg" alt="ЭпплShop"/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/5.jpg" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/5.jpg" alt="ЭпплShop"/>
                                     </li>
                                     <li class="slider__list-items">
-                                        <img class="slider__list-pic" src="img/slider/6.jpg" alt=""/>
+                                        <img class="slider__list-pic" src="img/slider/6.jpg" alt="ЭпплShop"/>
                                     </li>
                                 </ul>
                                 <div class="slider__controls-button slider__controls-button_prev">&lt;</div>
                                 <div class="slider__controls-button slider__controls-button_next">&gt;</div>
                             </div>
                         </div>
-                        <div class="content__media__character__information">
-                            <h1 class="content__media__character__information-name">iPad Air Wi-Fi + Cellular 128GB - Silver</h1>
-                            <table class="content__media__character__information-table">
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Артикул</td>
-                                    <td class="content__media__character__information-innerItems content__media__character__information-innerItems_mod">42787825</td>
+                        <div class="content__media__character">
+                            <h1 class="content__media__character-name">iPad Air Wi-Fi + Cellular 128GB - Silver</h1>
+                            <table class="character-table">
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Артикул</td>
+                                    <td class="character-innerItems character-innerItems_mod">42787825</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Опция</td>
-                                    <td class="content__media__character__information-innerItems">включена</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Опция</td>
+                                    <td class="character-innerItems">включена</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Цвет</td>
-                                    <td class="content__media__character__information-innerItems">серебристый</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Цвет</td>
+                                    <td class="character-innerItems">серебристый</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Размер</td>
-                                    <td class="content__media__character__information-innerItems">1280*1245*90</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Размер</td>
+                                    <td class="character-innerItems">1280*1245*90</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Вес</td>
-                                    <td class="content__media__character__information-innerItems">200 кг</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Вес</td>
+                                    <td class="character-innerItems">200 кг</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Артикул</td>
-                                    <td class="content__media__character__information-innerItems">42787825</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Артикул</td>
+                                    <td class="character-innerItems">42787825</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Опция</td>
-                                    <td class="content__media__character__information-innerItems">включена</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Опция</td>
+                                    <td class="character-innerItems">включена</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Цвет</td>
-                                    <td class="content__media__character__information-innerItems">серебристый</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Цвет</td>
+                                    <td class="character-innerItems">серебристый</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Размер</td>
-                                    <td class="content__media__character__information-innerItems">1280*1245*90</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Размер</td>
+                                    <td class="character-innerItems">1280*1245*90</td>
                                 </tr>
-                                <tr class="content__media__character__information-items">
-                                    <td class="content__media__character__information-innerItems">Вес</td>
-                                    <td class="content__media__character__information-innerItems">200 кг</td>
+                                <tr class="character-items">
+                                    <td class="character-innerItems">Вес</td>
+                                    <td class="character-innerItems">200 кг</td>
                                 </tr>
                             </table>
                         </div>
@@ -264,7 +266,9 @@
                     <div class="footer__row">
                         <div class="footer__row__col4">
                             <div class="footer__row__col4__logo">
-                                <img src="img/logo/footer_logo.png" alt="">
+                                <a href="#" class="logo">
+                                    <img src="img/logo/footer_logo.png" alt="ЭпплShop">
+                                </a>
                             </div>
                         </div>
                         <div class="footer__row__col4">
@@ -347,14 +351,13 @@
                 </div>
             </div>
         </div>
+        <div class="buttonUp">
+            <a class="buttonUp-link" href="#scroll">Наверх</a>
+            <div class="triangle"></div>
+        </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/placeholder.js"></script>
-        <script>
-            $(document).ready(function() {
-                $('input, textarea').placeholder();
-            });
-        </script>
         <script src="js/main.js"></script>
     </body>
 </html>

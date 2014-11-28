@@ -93,12 +93,13 @@
 
 .header__buy__search {
   float: left;
-  margin: 10px 9px 12px 0;
+  margin: 10px 0 12px 0;
 }
 .header__buy__search-item {
+    box-sizing: border-box;
 	padding: 7.5px 0 8px 10px;
 	border: 1px solid #dce6f0;
-	width: 326px;
+	width: 336-79px;
 	font-family: elektra_light_proregular;
 	color: #b7b9bb;
 	font-size: 15px;
@@ -109,7 +110,7 @@
 	}
 }
 .header__buy__search-item_search {
-	margin-left: -83px;
+	margin-left: -6px;
 	padding: 6.5px 14.5px 8.5px 14.5px;
 	background-color: #00B9FE;
 	color: #FFF;
@@ -169,6 +170,10 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
+.header__nav {
+  text-align: center;
+}
+
 .header__nav__list-item {
   display: inline-block;
   position: relative;
@@ -186,7 +191,7 @@
   font-size: 15px;
   text-decoration: none;
   display: block;
-  padding: 13px 9px 9px 31px;
+  padding: 13px 9px 9px 30px;
   transition: all .3s ease-in-out;
   &:before {
     content: '';

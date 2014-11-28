@@ -3,6 +3,7 @@
     app = {
         initializate : function () {
             app.setUpListeners();
+            app.showPlaceholder();
         },
         setUpListeners : function () {
             $('.header__buy__about__list-link_backet').on('click', app.togClass);
@@ -10,9 +11,16 @@
             $('.slider__controls-button').on('click', app.jqueryCarousel);
             $('.slider__list-items').on('click', app.slideshow);
             $('.buttonUp').on('click', app.scrollUp);
+            $(window).scroll(app.scroll);
         },
-        togClass : function () {
-            $('.backet').toggleClass('active');
+
+        DURATION: 300,
+        DESTINATION: 100,
+
+        togClass : function (e) {
+            e.preventDefault();
+            $('.backet').slideToggle(app.DURATION);
+            //$('.backet').toggleClass('active');
         },
         animateNav : function () {
             var $this = $(this),
@@ -25,11 +33,11 @@
             var button = $(this),
                 slider = $('.slider'),
                 sliderList = slider.find('.slider__list'),
-                currentCoord = parseInt(sliderList.css('left'));
-            step = 75,
-                slide = sliderList.find('.slider__list-items');
-            firstSlide = slide.first();
-            lastSlide = slide.last();
+                currentCoord = parseInt(sliderList.css('left')),
+                step = 75,
+                slide = sliderList.find('.slider__list-items'),
+                firstSlide = slide.first(),
+                lastSlide = slide.last();
 
             if (button.hasClass('slider__controls-button_next')) {
                 firstSlide.appendTo(sliderList);
@@ -47,7 +55,7 @@
                     ({
                         left : '5px',
                         marginRight: '10px'
-                    }), 300);
+                    }), app.DURATION);
             }
         },
         slideshow : function () {
@@ -58,12 +66,44 @@
 
             display.attr('src' , imgPath);
         },
-        scrollUp : function () {
-            var scroll = $('#scroll');
-            destination = $(scroll).offset().top;
+        scrollUp : function (e) {
+            e.preventDefault();
 
-            $('body').animate({scrollTop: destination}, 500);
+            var scroll = $('#scroll');
+            destination = scroll.offset().top;
+
+
+            $('body').animate({
+                scrollTop: destination
+                }, app.DURATION);
+        },
+        showPlaceholder : function () {
+            $('input, textarea').placeholder();
+        },
+
+        scroll: function () {
+            var btnUp = $('.buttonUp');
+
+            var str = navigator.userAgent,
+                    ie8 = 'MSIE 8'
+            if (!(str.indexOf(ie8) + 1)) {
+                if (this.scrollY > app.DESTINATION) {
+                    btnUp.css('display' , 'block')
+                        .animate({
+                            opacity: '1'
+                        }, app.DURATION)
+                } else {
+                    btnUp.css('display' , 'none')
+                        .animate({
+                            opacity: '0'
+                        }, app.DURATION)
+                }
+            }
+
+
         }
+
+
     }
 
     app.initializate();

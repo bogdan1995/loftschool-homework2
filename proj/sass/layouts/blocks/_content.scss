@@ -6,6 +6,7 @@
   position: fixed;
   bottom: 20px;
   right: 10%;
+  opacity: 0;
 }
 
 .triangle {
@@ -189,14 +190,19 @@
 
 // Таблица с характеристиками
 
-.content__media__character__information-table {
+.content__media__character {
+  overflow: hidden;
+  width: 500px;
+}
+
+.content__media__character-table {
   width: 443px;
   box-sizing: border-box;
 }
 
 // Название таблицы
 
-.content__media__character__information-name {
+.content__media__character-name {
   text-align: left;
   color: #00B9FE;
   font-size: 25px;
@@ -207,13 +213,13 @@
 
 // Для каждой втрой строчки
 
-.content__media__character__information-items:nth-child(2n) {
+.character-items:nth-child(2n) {
   background: #eef2f4;
 }
 
 // Ячейки
 
-.content__media__character__information-innerItems {
+.character-innerItems {
   box-sizing: border-box;
   color: #5C7B98;
   font-size: 14px;
