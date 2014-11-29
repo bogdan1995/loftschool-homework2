@@ -3,14 +3,14 @@
 .footer__wrapper {
   background:  url('../img/footer_background.png') #613993;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
 }
 
 // Стиль столбца
 
 .footer__row {
-  padding-top: 49px;
+  padding: 49px 0 1px 0;
   overflow: hidden;
 }
 

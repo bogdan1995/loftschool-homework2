@@ -98,7 +98,7 @@
     box-sizing: border-box;
 	padding: 7.5px 0 8px 10px;
 	border: 1px solid #dce6f0;
-	width: 336-79px;
+	width: 261px;
 	font-family: elektra_light_proregular;
 	color: #b7b9bb;
 	font-size: 15px;
@@ -121,15 +121,15 @@
 // Покупка
 
 .header__buy__about {
+  @extend .clearfix;
 	margin-top: 4px;
-    @extend .clearfix;
     float: right;
 }
 
 .header__buy__about__list-item {
     display: inline-block;
     margin-left: 15px;
-  position: relative;
+    position: relative;
 }
 
 .header__buy__about__list-link {
@@ -160,6 +160,33 @@
     top: 12px;
     left: 11px;
   }
+}
+
+// Всплывающая корзина
+
+
+.backet-item {
+    @extend .clearfix;
+    display: block;
+    position: relative;
+}
+
+.header__buy__about__list-link_mod {
+  @extend .clearfix;
+}
+
+.backet__item-link_name {
+  margin: 0;
+  float: right;
+  width: 161px;
+  line-height: 60px;
+}
+.img-wrapper {
+  width: 63px;
+  height: 51px;
+  position: absolute;
+  text-align: center;
+  line-height: 51px;
 }
 
 //  3-й блок в шапке

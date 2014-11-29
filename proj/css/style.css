@@ -595,7 +595,7 @@ li {
 }
 
 /* line 20, ../sass/layouts/_settings.scss */
-.clearfix:after, .header__info:after, .header__buy:after, .header__buy__about:after {
+.clearfix:after, .header__info:after, .header__buy:after, .header__buy__about:after, .backet-item:after, .header__buy__about__list-link_mod:after {
   content: ".";
   clear: both;
   display: block;
@@ -827,7 +827,7 @@ html {
   box-sizing: border-box;
   padding: 7.5px 0 8px 10px;
   border: 1px solid #dce6f0;
-  width: 257px;
+  width: 261px;
   font-family: elektra_light_proregular;
   color: #b7b9bb;
   font-size: 15px;
@@ -897,33 +897,56 @@ html {
   left: 11px;
 }
 
-/* line 167, ../sass/layouts/blocks/_header.scss */
+/* line 168, ../sass/layouts/blocks/_header.scss */
+.backet-item {
+  display: block;
+  position: relative;
+}
+
+/* line 178, ../sass/layouts/blocks/_header.scss */
+.backet__item-link_name {
+  margin: 0;
+  float: right;
+  width: 161px;
+  line-height: 60px;
+}
+
+/* line 184, ../sass/layouts/blocks/_header.scss */
+.img-wrapper {
+  width: 63px;
+  height: 51px;
+  position: absolute;
+  text-align: center;
+  line-height: 51px;
+}
+
+/* line 194, ../sass/layouts/blocks/_header.scss */
 .header__nav__wrapper {
   background-color: #F7F7F7;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-/* line 172, ../sass/layouts/blocks/_header.scss */
+/* line 199, ../sass/layouts/blocks/_header.scss */
 .header__nav {
   text-align: center;
 }
 
-/* line 176, ../sass/layouts/blocks/_header.scss */
+/* line 203, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item {
   display: inline-block;
   position: relative;
   margin-left: -5px;
 }
-/* line 180, ../sass/layouts/blocks/_header.scss */
+/* line 207, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link {
   padding-right: 14px;
 }
-/* line 182, ../sass/layouts/blocks/_header.scss */
+/* line 209, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link:before, .header__nav__list-item:last-child .header__nav__list-link:after {
   border: none;
 }
 
-/* line 188, ../sass/layouts/blocks/_header.scss */
+/* line 215, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link {
   color: #5C7B98;
   font-size: 15px;
@@ -932,7 +955,7 @@ html {
   padding: 13px 9px 9px 30px;
   transition: all .3s ease-in-out;
 }
-/* line 195, ../sass/layouts/blocks/_header.scss */
+/* line 222, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:before {
   content: '';
   position: absolute;
@@ -943,7 +966,7 @@ html {
   right: -16px;
   z-index: 99;
 }
-/* line 205, ../sass/layouts/blocks/_header.scss */
+/* line 232, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:after {
   content: '';
   position: absolute;
@@ -955,30 +978,30 @@ html {
   z-index: 99;
   transition: all .3s ease-in-out;
 }
-/* line 216, ../sass/layouts/blocks/_header.scss */
+/* line 243, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover {
   background: #dce6f0;
 }
-/* line 218, ../sass/layouts/blocks/_header.scss */
+/* line 245, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover:after {
   border-left-color: #dce6f0;
 }
 
-/* line 224, ../sass/layouts/blocks/_header.scss */
+/* line 251, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active {
   background: #00b9fe;
   color: #fff;
 }
-/* line 227, ../sass/layouts/blocks/_header.scss */
+/* line 254, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:after, .header__nav__list-link_active:before {
   border-left: 16px solid #00b9fe;
 }
-/* line 230, ../sass/layouts/blocks/_header.scss */
+/* line 257, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover {
   background: #00b9fe;
   transform: none;
 }
-/* line 233, ../sass/layouts/blocks/_header.scss */
+/* line 260, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover:after, .header__nav__list-link_active:hover:before {
   border-left-color: #00b9fe;
   transform: none;
@@ -988,13 +1011,13 @@ html {
 .footer__wrapper {
   background: url("../img/footer_background.png") #613993;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
 }
 
 /* line 12, ../sass/layouts/blocks/_footer.scss */
 .footer__row {
-  padding-top: 49px;
+  padding: 49px 0 1px 0;
   overflow: hidden;
 }
 
@@ -1059,7 +1082,7 @@ html {
   position: fixed;
   bottom: 20px;
   right: 10%;
-  opacity: 0;
+  display: none;
 }
 
 /* line 12, ../sass/layouts/blocks/_content.scss */
@@ -1121,7 +1144,7 @@ html {
 
 /* line 63, ../sass/layouts/blocks/_content.scss */
 .content__wrapper {
-  padding-bottom: 308px;
+  padding-bottom: 248px;
 }
 
 /* line 69, ../sass/layouts/blocks/_content.scss */
@@ -1314,11 +1337,11 @@ html {
 }
 
 /* line 253, ../sass/layouts/blocks/_content.scss */
-.row__col4 {
+.row__col4-text {
+  width: 33%;
   box-sizing: border-box;
   padding-right: 12px;
   float: left;
-  width: 33%;
 }
 
 /* line 262, ../sass/layouts/blocks/_content.scss */

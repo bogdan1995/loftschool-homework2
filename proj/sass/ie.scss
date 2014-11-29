@@ -6,13 +6,35 @@
 
 // Hack for IE8
 
-.character__information-items:first-child + *,
-.character__information-items:first-child + * + * + *,
-.character__information-items:first-child + * + * + * + * + *,
-.character__information-items:first-child + * + * + * + * + * + * + *,
-.character__information-items:first-child + * + * + * + * + * + * + * + * + * {
+.slider__controls-button_next {
+  right: 8px;
+  &:hover:after {
+    border-left: 8px solid #00b9fe;
+  }
+  &:after {
+    border-left: 8px solid #d0e4f3;
+    right: -7px;
+  }
+}
+
+.character-items:first-child + *,
+.character-items:first-child + * + * + *,
+.character-items:first-child + * + * + * + * + *,
+.character-items:first-child + * + * + * + * + * + * + *,
+.character-items:first-child + * + * + * + * + * + * + * + * + * {
   background: #eef2f4;
 }
+
+.character-innerItems:first-child+ * {
+  padding: 9px 25px 8px 63px;
+  width: 255px;
+}
+
+
+.character-table {
+  width: 188+255px;
+}
+
 .backet__list-row:first-child + *{
   background: #eef2f4;
 }
@@ -43,4 +65,23 @@
 
 .buttonUp {
   display: block;
+  filter: alpha(opacity=30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  &:hover {
+    filter: alpha(opacity=100);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    & .triangle {
+      filter: alpha(opacity=100);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+  }
+}
+
+.buttonUp-link {
+  padding-bottom: 6px;
+}
+
+.triangle {
+  filter: alpha(opacity=30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 }

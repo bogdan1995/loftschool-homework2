@@ -6,7 +6,7 @@
   position: fixed;
   bottom: 20px;
   right: 10%;
-  opacity: 0;
+  display: none;
 }
 
 .triangle {
@@ -61,7 +61,7 @@
 // Обертка контента
 
 .content__wrapper {
-  padding-bottom: 75+233px;
+  padding-bottom: 248px;
 }
 
 // Блок пути
@@ -250,11 +250,11 @@
   width: 100%;
 }
 
-.row__col4 {
+.row__col4-text {
+  width: 33%;
   box-sizing: border-box;
   padding-right: 12px;
   float: left;
-  width:33%;
 }
 
 // Название

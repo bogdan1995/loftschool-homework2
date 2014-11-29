@@ -1,10 +1,13 @@
+'use strict';
+
 (function () {
 
-    app = {
+    var app = {
         initializate : function () {
             app.setUpListeners();
             app.showPlaceholder();
         },
+
         setUpListeners : function () {
             $('.header__buy__about__list-link_backet').on('click', app.togClass);
             $('.header__nav__list-link').on('click', app.animateNav);
@@ -16,6 +19,16 @@
 
         DURATION: 300,
         DESTINATION: 100,
+
+        isIE8 : function () {
+            var str = navigator.userAgent,
+                    ie8 = 'MSIE 8',
+                    result = false;
+            if (str.indexOf(ie8) + 1) {
+                result  = true;
+            }
+            return result;
+        },
 
         togClass : function (e) {
             e.preventDefault();
@@ -36,11 +49,8 @@
                 currentCoord = parseInt(sliderList.css('left')),
                 step = 75,
                 slide = sliderList.find('.slider__list-items'),
-                step2 = slide.offsetHeight(),
                 firstSlide = slide.first(),
                 lastSlide = slide.last();
-
-            console.log(step2);
 
             if (button.hasClass('slider__controls-button_next')) {
                 firstSlide.appendTo(sliderList);
@@ -70,10 +80,12 @@
             display.attr('src' , imgPath);
         },
         scrollUp : function (e) {
-            e.preventDefault();
+            if (!(app.isIE8())) {
+                e.preventDefault();
+            }
 
-            var scroll = $('#scroll');
-            destination = scroll.offset().top;
+            var scroll = $('#scroll'),
+                    destination = scroll.offset().top;
 
 
             $('body').animate({
@@ -87,26 +99,14 @@
         scroll: function () {
             var btnUp = $('.buttonUp');
 
-            var str = navigator.userAgent,
-                    ie8 = 'MSIE 8'
-            if (!(str.indexOf(ie8) + 1)) {
+            if (!(app.isIE8())) {
                 if (this.scrollY > app.DESTINATION) {
-                    btnUp.css('display' , 'block')
-                        .animate({
-                            opacity: '1'
-                        }, app.DURATION)
+                    btnUp.fadeIn(app.DURATION);
                 } else {
-                    btnUp.css('display' , 'none')
-                        .animate({
-                            opacity: '0'
-                        }, app.DURATION)
+                    btnUp.fadeOut(app.DURATION);
                 }
             }
-
-
         }
-
-
     }
 
     app.initializate();
