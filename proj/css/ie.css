@@ -4,11 +4,11 @@
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
 /* line 9, ../sass/ie.scss */
-.content__media__character__information-items:first-child + *,
-.content__media__character__information-items:first-child + * + * + *,
-.content__media__character__information-items:first-child + * + * + * + * + *,
-.content__media__character__information-items:first-child + * + * + * + * + * + * + *,
-.content__media__character__information-items:first-child + * + * + * + * + * + * + * + * + * {
+.character__information-items:first-child + *,
+.character__information-items:first-child + * + * + *,
+.character__information-items:first-child + * + * + * + * + *,
+.character__information-items:first-child + * + * + * + * + * + * + *,
+.character__information-items:first-child + * + * + * + * + * + * + * + * + * {
   background: #eef2f4;
 }
 

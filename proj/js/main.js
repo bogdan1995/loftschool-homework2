@@ -36,8 +36,11 @@
                 currentCoord = parseInt(sliderList.css('left')),
                 step = 75,
                 slide = sliderList.find('.slider__list-items'),
+                step2 = slide.offsetHeight(),
                 firstSlide = slide.first(),
                 lastSlide = slide.last();
+
+            console.log(step2);
 
             if (button.hasClass('slider__controls-button_next')) {
                 firstSlide.appendTo(sliderList);

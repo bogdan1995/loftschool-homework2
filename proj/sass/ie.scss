@@ -6,11 +6,11 @@
 
 // Hack for IE8
 
-.content__media__character__information-items:first-child + *,
-.content__media__character__information-items:first-child + * + * + *,
-.content__media__character__information-items:first-child + * + * + * + * + *,
-.content__media__character__information-items:first-child + * + * + * + * + * + * + *,
-.content__media__character__information-items:first-child + * + * + * + * + * + * + * + * + * {
+.character__information-items:first-child + *,
+.character__information-items:first-child + * + * + *,
+.character__information-items:first-child + * + * + * + * + *,
+.character__information-items:first-child + * + * + * + * + * + * + *,
+.character__information-items:first-child + * + * + * + * + * + * + * + * + * {
   background: #eef2f4;
 }
 .backet__list-row:first-child + *{

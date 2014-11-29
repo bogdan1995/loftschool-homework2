@@ -28,6 +28,15 @@ li {
 
 // Общий стиль для странички
 
+html {
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
 .header__info, .header__buy, .header__nav, .content, .footer {
   width: 1000px;
   margin: 0 auto;

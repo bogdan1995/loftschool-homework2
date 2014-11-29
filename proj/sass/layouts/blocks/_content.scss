@@ -61,7 +61,7 @@
 // Обертка контента
 
 .content__wrapper {
-  margin-bottom: 75px;
+  padding-bottom: 75+233px;
 }
 
 // Блок пути
@@ -192,7 +192,6 @@
 
 .content__media__character {
   overflow: hidden;
-  width: 500px;
 }
 
 .content__media__character-table {
