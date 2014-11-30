@@ -1,31 +1,65 @@
 var gulp = require('gulp'),
-        autoprefixer = require('gulp-autoprefixer'),
         jsmin = require('gulp-jsmin'),
-        rename = require('gulp-rename'),
-        concatCss = require('gulp-concat-css'),
         minifyCSS = require('gulp-minify-css'),
-        htmlmin = require('gulp-htmlmin');
+        useref = require('gulp-useref'),
+        gulpif = require('gulp-if'),
+        uglify = require('gulp-uglify'),
+        sass = require('gulp-sass'),
+        connect = require('gulp-connect');
 
-gulp.task('default', function() {
-    gulp.src('proj/js/main.js')
-        .pipe(jsmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist/js'));
+// Create a local server
+gulp.task('connect', function() {
+    connect.server({
+        root: 'app',
+        livereload: true
+    });
+    opn('http://localhost:8080/');
+});
 
-    gulp.src('proj/css/*.css')
-        .pipe(concatCss("css/bundle.css"))
-        .pipe(gulp.dest('dist'));
+// Minify
+gulp.task('minify', function() {
+    gulp.src('./dist/css/*.css')
+        .pipe(minifyCSS(
+            {
+                keepBreaks:false,
+                keepSpecialComments: 1
+            }
+        ))
+        .pipe(gulp.dest('./dist/css'))
+});
 
-    gulp.src('dist/css/bundle.css')
-        .pipe(minifyCSS({keepBreaks:false}))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist/css'))
-
-    gulp.src('dist/css/ie.css')
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist/css'))
-
+// Tracking changes in *.html
+gulp.task('html', function () {
     gulp.src('proj/*.html')
-            .pipe(htmlmin({collapseWhitespace: true}))
-            .pipe(gulp.dest('dist'))
+        .pipe(connect.reload());
+});
+
+// Tracking changes in *.html
+gulp.task('sass', function () {
+    gulp.src('proj/sass/style.scss')
+        .pipe(scss())
+        .pipe(gulp.dest('css'))
+         .pipe(connect.reload());
+});
+
+// Watcher
+gulp.task('watch', function () {
+    gulp.watch(['proj/*.html'], ['html']);
+    gulp.watch(['proj/sass/*.scss'], ['sass']);
+});
+
+// Default task
+gulp.task('default', ['connect', 'watch']);
+
+// Build project
+gulp.task('build', function () {
+    var assets = useref.assets();
+
+    return gulp.src('proj/*.html')
+        .pipe(assets)
+        .pipe(gulpif('*.js', uglify()))
+        .pipe(gulpif('*.css', minifyCSS()))
+        .pipe(assets.restore())
+        .pipe(useref())
+        .pipe(gulp.dest('dist'));
 });

@@ -25,12 +25,21 @@
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+        <!-- build:css css/style.css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/animate.css"/>
+        <!-- endbuild -->
+
         <!--[if lte IE 9]>
+        <!-- build:css css/ie.css -->
         <link rel="stylesheet" href="css/ie.css"/>
-        <![endif]-->
+        <!-- endbuild -->
+        <!--![endif]-->
+
+        <!-- build:js js/modernizr-2.6.2.min.js -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <!-- endbuild -->
     </head>
     <body id="scroll">
         <!--[if lt IE 7]>
@@ -355,12 +364,15 @@
             </div>
         </div>
         <div class="buttonUp">
-            <a class="buttonUp-link" href="#scroll">Наверх</a>
+            <a class="buttonUp-link" href="#scroll">Gb</a>
             <div class="triangle"></div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/vendor/placeholder.js"></script>
+        <!-- build:js js/vendor.js -->
+        <script src="js/vendor/jquery-1.10.2.js"></script>
+        <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+        <!-- endbuild -->
+        <!-- build:js js/main.js -->
         <script src="js/main.js"></script>
+        <!-- endbuild -->
     </body>
 </html>
