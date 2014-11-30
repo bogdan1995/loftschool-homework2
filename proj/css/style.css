@@ -595,7 +595,7 @@ li {
 }
 
 /* line 20, ../sass/layouts/_settings.scss */
-.clearfix:after, .header__info:after, .header__buy:after, .header__buy__about:after, .backet-item:after, .header__buy__about__list-link_mod:after {
+.clearfix:after, .header__info:after, .header__buy:after, .header__buy__about:after, .header__buy__about__list-link_mod:after {
   content: ".";
   clear: both;
   display: block;
@@ -897,56 +897,65 @@ html {
   left: 11px;
 }
 
-/* line 168, ../sass/layouts/blocks/_header.scss */
-.backet-item {
+/* line 167, ../sass/layouts/blocks/_header.scss */
+.backet__item:nth-child(2n) {
+  background: #eef2f4;
+}
+
+/* line 171, ../sass/layouts/blocks/_header.scss */
+.header__buy__about__list-link_mod {
   display: block;
   position: relative;
+  min-height: 75px;
 }
 
 /* line 178, ../sass/layouts/blocks/_header.scss */
 .backet__item-link_name {
-  margin: 0;
+  margin: 25px 0;
   float: right;
-  width: 161px;
-  line-height: 60px;
+  width: 160px;
+  line-height: 1.5em;
+  text-decoration: underline;
 }
 
-/* line 184, ../sass/layouts/blocks/_header.scss */
+/* line 185, ../sass/layouts/blocks/_header.scss */
 .img-wrapper {
   width: 63px;
   height: 51px;
   position: absolute;
   text-align: center;
   line-height: 51px;
+  top: 13px;
+  left: 9px;
 }
 
-/* line 194, ../sass/layouts/blocks/_header.scss */
+/* line 197, ../sass/layouts/blocks/_header.scss */
 .header__nav__wrapper {
   background-color: #F7F7F7;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-/* line 199, ../sass/layouts/blocks/_header.scss */
+/* line 202, ../sass/layouts/blocks/_header.scss */
 .header__nav {
   text-align: center;
 }
 
-/* line 203, ../sass/layouts/blocks/_header.scss */
+/* line 206, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item {
   display: inline-block;
   position: relative;
   margin-left: -5px;
 }
-/* line 207, ../sass/layouts/blocks/_header.scss */
+/* line 210, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link {
   padding-right: 14px;
 }
-/* line 209, ../sass/layouts/blocks/_header.scss */
+/* line 212, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link:before, .header__nav__list-item:last-child .header__nav__list-link:after {
   border: none;
 }
 
-/* line 215, ../sass/layouts/blocks/_header.scss */
+/* line 218, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link {
   color: #5C7B98;
   font-size: 15px;
@@ -955,7 +964,7 @@ html {
   padding: 13px 9px 9px 30px;
   transition: all .3s ease-in-out;
 }
-/* line 222, ../sass/layouts/blocks/_header.scss */
+/* line 225, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:before {
   content: '';
   position: absolute;
@@ -966,7 +975,7 @@ html {
   right: -16px;
   z-index: 99;
 }
-/* line 232, ../sass/layouts/blocks/_header.scss */
+/* line 235, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:after {
   content: '';
   position: absolute;
@@ -978,30 +987,30 @@ html {
   z-index: 99;
   transition: all .3s ease-in-out;
 }
-/* line 243, ../sass/layouts/blocks/_header.scss */
+/* line 246, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover {
   background: #dce6f0;
 }
-/* line 245, ../sass/layouts/blocks/_header.scss */
+/* line 248, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover:after {
   border-left-color: #dce6f0;
 }
 
-/* line 251, ../sass/layouts/blocks/_header.scss */
+/* line 254, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active {
   background: #00b9fe;
   color: #fff;
 }
-/* line 254, ../sass/layouts/blocks/_header.scss */
+/* line 257, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:after, .header__nav__list-link_active:before {
   border-left: 16px solid #00b9fe;
 }
-/* line 257, ../sass/layouts/blocks/_header.scss */
+/* line 260, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover {
   background: #00b9fe;
   transform: none;
 }
-/* line 260, ../sass/layouts/blocks/_header.scss */
+/* line 263, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover:after, .header__nav__list-link_active:hover:before {
   border-left-color: #00b9fe;
   transform: none;

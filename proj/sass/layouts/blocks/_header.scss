@@ -164,22 +164,23 @@
 
 // Всплывающая корзина
 
-
-.backet-item {
-    @extend .clearfix;
-    display: block;
-    position: relative;
+.backet__item:nth-child(2n) {
+  background: #eef2f4;
 }
 
 .header__buy__about__list-link_mod {
   @extend .clearfix;
+  display: block;
+  position: relative;
+  min-height: 75px;
 }
 
 .backet__item-link_name {
-  margin: 0;
+  margin: 25px 0;
   float: right;
-  width: 161px;
-  line-height: 60px;
+  width: 160px;
+  line-height: 1.5em;
+  text-decoration: underline;
 }
 .img-wrapper {
   width: 63px;
@@ -187,6 +188,8 @@
   position: absolute;
   text-align: center;
   line-height: 51px;
+  top: 13px;
+  left: 9px;
 }
 
 //  3-й блок в шапке

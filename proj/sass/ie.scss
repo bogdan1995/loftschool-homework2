@@ -63,6 +63,10 @@
   border-bottom: 1px solid  #dce6f0;
 }
 
+.backet__item:first-child + * {
+  background: #eef2f4;
+}
+
 .buttonUp {
   display: block;
   filter: alpha(opacity=30);
