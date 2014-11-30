@@ -104,11 +104,23 @@
   margin-top: 8px;
   position: relative;
   width: 298px;
+  overflow: hidden;
 }
 
 .content__media__photos_wrapper {
   margin-bottom: 12px;
+  min-width: 11298px;
+  position: relative;
+  left: 0;
+}
+
+.content__media__photos-item {
+  display: inline-block;
   width: 298px;
+  margin-left: -5px;
+  &:first-child {
+    margin: 0;
+  }
 }
 
 .content__media__photos-pic {

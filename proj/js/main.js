@@ -65,19 +65,39 @@
                 lastSlide.prependTo(sliderList);
                 sliderList.css('left' , currentCoord-step+'px');
                 sliderList.animate(
-                    ({
+                    {
                         left : '5px',
                         marginRight: '10px'
-                    }), app.DURATION);
+                    }, app.DURATION);
             }
         },
         slideshow : function () {
-            var display = $('.content__media__photos-pic'),
+            var display = $('.content__media__photos-item'),
+                firstPhoto = display.first(),
                 $this = $(this),
                 img = $this.find('.slider__list-pic'),
-                imgPath = img.attr('src');
+                imgPath = img.attr('src'),
+                wrap = display.closest('.content__media__photos_wrapper'),
+                currentCoord = parseInt(wrap.css('left')),
+                step = display.outerWidth();
 
-            display.attr('src' , imgPath);
+            console.log(step);
+
+
+            img
+                .clone()
+                .removeClass('slider__list-pic')
+                .addClass('content__media__photos-pic')
+                .appendTo(wrap)
+                 .wrap($('<li/>').addClass('content__media__photos-item'));
+
+            firstPhoto.remove();
+
+            wrap
+                .css('left' , step + 'px')
+                .animate({
+                    left: '0px'
+                },  app.DURATION)
         },
         scrollUp : function (e) {
             if (!(app.isIE8())) {
