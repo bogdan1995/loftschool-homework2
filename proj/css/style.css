@@ -811,7 +811,7 @@ html {
 }
 
 /* line 86, ../sass/layouts/blocks/_header.scss */
-.header__buy__logo {
+.header__buy-logo {
   margin-right: 60px;
   float: left;
 }
@@ -904,12 +904,11 @@ html {
 
 /* line 171, ../sass/layouts/blocks/_header.scss */
 .header__buy__about__list-link_mod {
-  display: block;
   position: relative;
   min-height: 75px;
 }
 
-/* line 178, ../sass/layouts/blocks/_header.scss */
+/* line 177, ../sass/layouts/blocks/_header.scss */
 .backet__item-link_name {
   margin: 25px 0;
   float: right;
@@ -918,7 +917,7 @@ html {
   text-decoration: underline;
 }
 
-/* line 185, ../sass/layouts/blocks/_header.scss */
+/* line 184, ../sass/layouts/blocks/_header.scss */
 .img-wrapper {
   width: 63px;
   height: 51px;
@@ -929,33 +928,33 @@ html {
   left: 9px;
 }
 
-/* line 197, ../sass/layouts/blocks/_header.scss */
+/* line 196, ../sass/layouts/blocks/_header.scss */
 .header__nav__wrapper {
   background-color: #F7F7F7;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-/* line 202, ../sass/layouts/blocks/_header.scss */
+/* line 201, ../sass/layouts/blocks/_header.scss */
 .header__nav {
   text-align: center;
 }
 
-/* line 206, ../sass/layouts/blocks/_header.scss */
+/* line 205, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item {
   display: inline-block;
   position: relative;
   margin-left: -5px;
 }
-/* line 210, ../sass/layouts/blocks/_header.scss */
+/* line 209, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link {
   padding-right: 14px;
 }
-/* line 212, ../sass/layouts/blocks/_header.scss */
+/* line 211, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-item:last-child .header__nav__list-link:before, .header__nav__list-item:last-child .header__nav__list-link:after {
   border: none;
 }
 
-/* line 218, ../sass/layouts/blocks/_header.scss */
+/* line 217, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link {
   color: #5C7B98;
   font-size: 15px;
@@ -964,7 +963,7 @@ html {
   padding: 13px 9px 9px 30px;
   transition: all .3s ease-in-out;
 }
-/* line 225, ../sass/layouts/blocks/_header.scss */
+/* line 224, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:before {
   content: '';
   position: absolute;
@@ -975,7 +974,7 @@ html {
   right: -16px;
   z-index: 99;
 }
-/* line 235, ../sass/layouts/blocks/_header.scss */
+/* line 234, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:after {
   content: '';
   position: absolute;
@@ -987,30 +986,30 @@ html {
   z-index: 99;
   transition: all .3s ease-in-out;
 }
-/* line 246, ../sass/layouts/blocks/_header.scss */
+/* line 245, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover {
   background: #dce6f0;
 }
-/* line 248, ../sass/layouts/blocks/_header.scss */
+/* line 247, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link:hover:after {
   border-left-color: #dce6f0;
 }
 
-/* line 254, ../sass/layouts/blocks/_header.scss */
+/* line 253, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active {
   background: #00b9fe;
   color: #fff;
 }
-/* line 257, ../sass/layouts/blocks/_header.scss */
+/* line 256, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:after, .header__nav__list-link_active:before {
   border-left: 16px solid #00b9fe;
 }
-/* line 260, ../sass/layouts/blocks/_header.scss */
+/* line 259, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover {
   background: #00b9fe;
   transform: none;
 }
-/* line 263, ../sass/layouts/blocks/_header.scss */
+/* line 262, ../sass/layouts/blocks/_header.scss */
 .header__nav__list-link_active:hover:after, .header__nav__list-link_active:hover:before {
   border-left-color: #00b9fe;
   transform: none;

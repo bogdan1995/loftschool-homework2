@@ -6,14 +6,15 @@
         initializate : function () {
             app.setUpListeners();
             app.showPlaceholder();
+
         },
         // Events
         setUpListeners : function () {
-            $('.header__buy__about__list-link_backet').on('click', app.togClass);
+            $('.header__buy__about__list-link_backet').hover(app.showBacket, app.hideBacket);
             $('.header__nav__list-link').on('click', app.animateNav);
             $('.slider__controls-button').on('click', app.jqueryCarousel);
             $('.slider__list-items').on('click', app.slideshow);
-            $('.buttonUp').on('click', app.scrollUp);
+            $('.buttonUp').on(app.scrollUp);
             $(window).scroll(app.scroll);
         },
         // animation time
@@ -32,9 +33,11 @@
             return result;
         },
         // Changing the state of the basket
-        togClass : function (e) {
-            e.preventDefault();
-            $('.backet').slideToggle(app.DURATION);
+        showBacket : function () {
+            $('.backet').stop(true,true).slideDown(app.DURATION);
+        },
+        hideBacket : function () {
+            $('.backet').stop(true,true).slideUp(app.DURATION);
         },
         // animation navigation
         animateNav : function () {

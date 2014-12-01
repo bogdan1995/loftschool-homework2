@@ -14,7 +14,7 @@
 }
 
 .header__buy__wrapper {
-	background: red;
+	background: #eef3f7;
 }
 
 .header__nav__wrapper {
@@ -83,7 +83,7 @@
 
 // Логотип
 
-.header__buy__logo {
+.header__buy-logo {
 	margin-right: 60px ;
 	float: left;
 }
@@ -170,7 +170,6 @@
 
 .header__buy__about__list-link_mod {
   @extend .clearfix;
-  display: block;
   position: relative;
   min-height: 75px;
 }
